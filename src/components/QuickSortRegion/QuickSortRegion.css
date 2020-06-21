@@ -1,0 +1,32 @@
+.quicksort-region{
+  margin-top: 2em;
+  width: 200px;
+  margin-right: 1em;
+  box-shadow: 0px 1px 2px 1px #bdbdbd;
+  padding: 0.5em;
+  border-radius: 2px;
+  background-color: white;
+  z-index: 1;
+}
+
+.region-color.i{
+  background-color: #593b3b;
+}
+
+.region-color.swap-index{
+  background-color: #f2d8a6;
+}
+
+.region-color.partition-index{
+  background-color: #ff6c00;
+}
+
+@media (max-width: 700px){
+  .quicksort-region{
+    font-size: 0.7em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 1em;
+  }
+}

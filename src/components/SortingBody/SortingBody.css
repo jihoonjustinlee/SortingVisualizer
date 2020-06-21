@@ -1,0 +1,171 @@
+.sorting-body{
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.main-body{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.bars-container{
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex: 1;
+  margin: 0 1em;
+}
+
+.regions{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.ui-container{
+  display: flex;
+  flex-direction: column;
+  background-color: #fff6e5;
+  width:200px;
+  font-size: 0.8em;
+}
+
+.project-name{
+  padding: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.delay-indicator{
+  font-size: 0.9em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.speed-container{
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 2px;
+  padding: 0 0.5em;
+  margin: 1.5em 0.5em 0.5em 0.5em;
+  box-shadow: 0px 1px 0px 1px #e3e3e3;
+  font-size: 0.9em;
+}
+
+button{
+  background: white;
+  border: none;
+  border-radius: 2px;
+  padding: 0.5em;
+  margin: 0.2em 0.5em;
+  box-shadow: 0px 1px 0px 1px #e3e3e3;
+  cursor: pointer;
+}
+
+.bar{
+  margin: 0 1px;
+  background-color: #ca20c75c;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  max-width: 100px;
+  transition: all 0.2s;
+}
+
+.bar:hover .value{
+  top: 0;
+  opacity: 0;
+}
+
+.bar:hover .index{
+  top: -20px;
+  opacity: 1;
+}
+
+.value{
+  font-size: 0.8em;
+  position: absolute;
+  top: -20px;
+  transition: all 0.2s;
+}
+
+.index{
+  font-size: 0.8em;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  transition: all 0.2s;
+}
+
+.hidden{
+  display: none;
+}
+
+.add-button{
+  margin-top: 2em;
+}
+
+#time-delay-controller{
+  cursor: pointer;
+  outline: none;
+  margin-left: 0.5em;
+  width: 100%;
+}
+
+button:disabled{
+  cursor: initial;
+}
+
+#time-delay-controller:disabled{
+  cursor: initial;
+}
+
+.bar.enter {
+  opacity: 0;
+}
+.bar.enter-active {
+  opacity: 1;
+  transition: all 0.2s;
+}
+
+.bar.exit-active {
+  display: none;
+}
+
+@media (max-width: 700px){
+  .sorting-body{
+    flex-direction: column-reverse;
+  }
+
+  .delay-indicator{
+    margin: 0.2em 0.5em;
+  }
+
+  .ui-container{
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .ui-container .project-name{
+    display: none;
+  }
+
+  .ui-container .add-button{
+    margin-top: initial;
+  }
+
+  .ui-container .reset-button{
+    margin: 0.2em 0.5em !important;
+  }
+
+  .ui-container .speed-container{
+    margin: 0.2em 0.5em;
+  }
+}

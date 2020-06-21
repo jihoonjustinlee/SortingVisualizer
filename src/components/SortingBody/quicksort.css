@@ -1,0 +1,16 @@
+.quicksort-pivot-index{
+  background-color: #f2d8a6;
+}
+
+.quicksort-index{
+  background-color: #593b3b;
+}
+
+.quicksort-pivot-end{
+  background-color: #ff6c00;
+}
+
+.quicksort-pivot-index.quicksort-index{
+  background: linear-gradient( #593b3b 50%, #f2d8a6 50%);
+}
+

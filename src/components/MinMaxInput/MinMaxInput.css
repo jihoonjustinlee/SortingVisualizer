@@ -1,0 +1,70 @@
+.min-max-container{
+  transition: opacity 0.2s;
+  margin: 0.2em 0.5em;
+  margin-top: 1em;
+}
+
+button:disabled{
+  cursor: initial;
+}
+
+input[type="text"]{
+  width: 100%;
+  padding: 0.5em 1em;
+  box-sizing: border-box;
+  border: 1px solid #ffeded;
+  border-radius: 3px;
+}
+
+.apply{
+  margin: 0;
+  margin-top: 0.5em;
+  width: 100%;
+  background-color: #3ac456;
+  color: white;
+}
+
+button:disabled{
+  background-color: white;
+  color: grey;
+}
+
+.message{
+  text-align: center;
+  padding: 0 0.5em;
+  margin-top: 0.5em;
+  color: red;
+  transition: opacity 0.2s;
+}
+
+.message.enter{
+  opacity: 0;
+}
+
+.message.enter-done{
+  opacity: 1;
+}
+
+.message.exit{
+  opacity: 1;
+}
+
+.message.exit-done{
+  opacity: 0;
+}
+
+.min-max-container.enter{
+  opacity: 0;
+}
+
+.min-max-container.enter-active{
+  opacity: 1;
+}
+
+.min-max-container.exit{
+  opacity: 1;
+}
+
+.min-max-container.exit-active{
+  opacity: 0;
+}
